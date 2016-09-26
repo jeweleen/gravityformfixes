@@ -1,0 +1,114 @@
+/*********************************************
+GRAVITY FORM STYLING
+*********************************************/
+
+/*Global GF styling that can be used from site to site.*/
+
+/* Set default width of form */
+.gravity-form {
+    margin:0 auto;
+    width:85%;
+}
+
+@media (max-width:767px) {
+
+    .gravity-form {
+        width:100%;
+    }
+
+}
+
+/* Hide labels for everything but radio and checkbox */
+.gravity-form label {
+    display:none !important;
+}
+
+/* Fix the additional margin added by section description */
+.gravity-form .gsection_description {
+    margin-bottom:0 !important;
+}
+
+.gravity-form .gfield_radio label,
+.gravity-form .gfield_checkbox label {
+    display: inline-block !important;
+    font-size:1rem !important;
+}
+
+/*Fix top margin of radio buttons and checkboxes */
+.gravity-form input[type="radio"],
+.gravity-form input[type="checkbox"] {
+    margin-top:0 !important;
+}
+
+/* Get rid of bottom border and reduce spacing of section headers */
+.gravity-form .gsection {
+    border:0 !important;
+    margin-bottom:10px !important;
+}
+
+/* Border type and color of text inputs, select dropdowns, and textfields */
+.gravity-form input[type="text"],
+.gravity-form select,
+.gravity-form textarea {
+    border:1px solid #43449b !important;
+}
+
+/* Fix top margin on credit card info */
+.gravity-form .ginput_container_creditcard input[type="text"],
+.gravity-form .ginput_container_creditcard select {
+    margin-top:16px !important;
+}
+
+/* Make select fields match height of text fields */
+.gravity-form select {
+    height:39px !important;
+}
+
+/* Add length to security code field to allow for placeholder text */
+.gravity-form .ginput_card_security_code {
+    max-width:60% !important;
+}
+
+/* Mobile Styling */
+
+@media (max-width:767px) {
+
+    /* Change radio into buttons */
+
+    .gravity-form .gform_wrapper li.gfield.gf_list_5col ul.gfield_radio {
+        text-align:center;
+    }
+
+    .gravity-form .gform_wrapper ul.gform_fields li.gfield input[type=radio] {
+        display:none;
+        width:0;
+        height:0;
+    }
+
+    .gravity-form .gform_wrapper li.gfield.gf_list_5col ul.gfield_radio li {
+        display:block;
+        margin:0;
+        width:inherit;
+    }
+
+    .gravity-form .gform_wrapper .gfield_radio li label {
+        margin:0 auto 10px auto;
+        display:block !important;
+        background-color:#43449b; /* Background color unselected */
+        color:#FFF;
+        padding:10px 15px;
+        text-align:center;
+
+    }
+
+    .gravity-form .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
+        font-weight: 700;
+        background-color: #cf2729; /* Background color selected */
+    }
+
+    .gravity-form .gsection_title,
+    .gravity-form .gsection_description {
+        text-align:center;
+    }
+
+}
