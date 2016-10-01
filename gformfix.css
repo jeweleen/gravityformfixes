@@ -18,6 +18,24 @@ GRAVITY FORM STYLING
 
 }
 
+/* Center content in forms using .center-fields class */
+
+.gravity-form.center-fields .gform_wrapper form {
+	text-align:center !important;
+}
+
+/* One-off Make text fields same height as button when using horizonal class */
+
+.gravity-form .gf_simple_horizontal input[type="text"] {
+	height:44px;
+}
+
+/* Shift button up when using horizontal class */
+
+.gravity-form .gf_simple_horizontal input[type="submit"] {
+	margin-top:-8px !important;
+}
+
 /* Hide labels for everything but radio and checkbox */
 .gravity-form label {
     display:none !important;
@@ -50,7 +68,7 @@ GRAVITY FORM STYLING
 .gravity-form input[type="text"],
 .gravity-form select,
 .gravity-form textarea {
-    border:1px solid #43449b !important;
+    border:1px solid #328aac !important;
 }
 
 /* Fix top margin on credit card info */
@@ -76,7 +94,7 @@ GRAVITY FORM STYLING
     /* Change radio into buttons */
 
     .gravity-form .gform_wrapper li.gfield.gf_list_5col ul.gfield_radio {
-        text-align:center;
+        text-align:center !important;
     }
 
     .gravity-form .gform_wrapper ul.gform_fields li.gfield input[type=radio] {
@@ -94,7 +112,7 @@ GRAVITY FORM STYLING
     .gravity-form .gform_wrapper .gfield_radio li label {
         margin:0 auto 10px auto;
         display:block !important;
-        background-color:#43449b; /* Background color unselected */
+        background-color:#328aac; /* Background color unselected */
         color:#FFF;
         padding:10px 15px;
         text-align:center;
@@ -103,7 +121,7 @@ GRAVITY FORM STYLING
 
     .gravity-form .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
         font-weight: 700;
-        background-color: #cf2729; /* Background color selected */
+        background-color: #063e5a; /* Background color selected */
     }
 
     .gravity-form .gsection_title,
